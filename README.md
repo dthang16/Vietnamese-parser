@@ -8,4 +8,4 @@ _PSGParse3.py_ - read the grammar file and convert the rules into Python variabl
 **How to run the code**
 
 To run the code, you run the command: python ChartyPy3.py -g PSG3.txt -i _input sentence_ <br/>
-
+Example: python ChartyPy3.py -g PSG3.txt -i "chị tôi ăn cơm"
