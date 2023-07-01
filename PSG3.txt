@@ -1,0 +1,61 @@
+# PSG1.txt
+# very small grammar for English
+# (C) 2003-2008 by Damir Cavar <damir@cavar.me>
+#
+# This code is written and distributed under the
+# Lesser GNU General Public License version 3 or newer.
+#
+# See http://www.gnu.org/copyleft/lgpl.html for details
+# on the license or the the file gpl.txt that should always be
+# distributed with this code.
+
+# Grammar:
+S  -> NP VP  # simple sentence rule
+
+NP -> N
+NP -> N Adj
+NP -> N PP
+NP -> N Adj PP
+NP -> N NP
+
+
+VP -> V NP
+VP -> V
+VP -> V PP
+VP -> V NP PP
+VP -> Adv V NP
+
+PP -> P NP
+
+# Lexicon:
+N   -> mẹ
+N   -> chị
+N   -> tôi
+N   -> ông
+N   -> dog
+N   -> cái ghế
+N   -> xe
+N   -> lá
+N   -> cơm
+
+
+Adj -> xanh
+Adj -> lớn
+Adj -> nhỏ
+
+Adv -> thỉnh thoảng
+Adv -> hôm qua
+
+V -> đi
+V -> yêu
+V -> ngồi
+V -> nhìn
+V -> gặp
+V -> ăn
+
+P -> trên
+P -> trong
+P -> cùng
+P -> dưới
+P -> với
+P -> của
